@@ -4,17 +4,20 @@ An app built for browsing, booking and paying for appointments with your local b
 
 ## Description
 
-The app was built as a group project during the final phase of the Northcoders Software Development bootcamp which ran from October-22 to January-23. The goal was to built a fully-functioning software product using at least 2 new technologies that hadn’t been taught on the Bootcamp. These were chosen as MongoDB for the Back-end and React Native for the Front-end
+The app was built as a group project during the final phase of the Northcoders Software Development bootcamp which ran from October-22 to January-23. The goal was to build a fully-functioning software product using at least 2 new technologies that hadn’t been taught on the Bootcamp. These were chosen as MongoDB for the back-end and React Native for the front-end
 
-The project ran over 3 weeks for the following phases :
+The project was phased over 3 :
 
-- Week 1 - idea generation, spiking and RATs, task definition
-- Week 2 - Back-end build using MongoDB. Start of Front-end design and build using React Native
-- Week 3 - Front-end finalisation
+- Week 1 - idea generation, spiking and RATs, define tasks on kanban board using Trello
+- Week 2 - build the back-end using MongoDB. Start of front-end build using React Native
+- Week 3 - finalisation of the front-end
 
-The back-end is hosted
+The front-end and back-end are in 2 separate repositories. The back-end repo can be accesed [here](https://github.com/g4ry5haw/BE-barbershop-booking).
 
-API's are hosted on cyclic. Check the server is up and running with the url :
+The back-end incldues a hosted MongoDB Atlas database.
+
+The API's are hosted on cyclic. You can check the server is up and running with the url :
+
 https://rich-gold-basket-clam-cape.cyclic.app/api/health
 
 ## Getting Started
@@ -40,34 +43,38 @@ Fork and clone this repository for the front-end
 Run `npm install` to install all dependencies
 
 To run the app you will need to have one of the following already installed:
-MacOS users: Xcode (search for Xcode on the app store or download from the [Apple developer website](https://developer.apple.com/xcode/))
-Windows or Linux: [Android Studio](https://developer.android.com/studio)
+
+**MacOS users:** Xcode
+
+> _search for Xcode on the app store or download from the [Apple developer website](https://developer.apple.com/xcode/)_
+
+**Windows or Linux users:** [Android Studio](https://developer.android.com/studio)
 
 ### Executing the program
 
 To start the app run `npm start` and choose an emulator to display the app (eg on macOS enter i to open an iOS emulator)
 
-Browse appointments without logging in. To book and pay for an appointment you must log in.
+Browse appointments without logging in.
 
-Login as an existing user or create a new user
+To book and pay for an appointment you must log in as an existing user or create a new user.
 
-Login details
-**username** | **password**
-----------|----------
-gs | password
-nb | password
-rn | password
-rm | password
+Existing user login details that can be used :
 
-Select the date and time of the appointment
+| **username** | **password** |
+| ------------ | :----------: |
+| gs           |   password   |
+| nb           |   password   |
+| rn           |   password   |
+| rm           |   password   |
 
-To pay using Stripe, the test credit card details are used:
-Card Details | Input
--------------|------
-Number | 4242 4242 4242 4242
-Expiry | Any future month and year in the format MM/YY
-CVC | Any 3 digit number
-Postcode | Any UK postcode (or 5 digit number if country is USA)
+To book an appointment and pay using Stripe, the test credit card details can be used:
+
+| Card Details | Input                                             |
+| ------------ | ------------------------------------------------- |
+| Number       | 4242 4242 4242 4242                               |
+| Expiry       | Any **future** month and year in the format MM/YY |
+| CVC          | Any 3 digit number                                |
+| Postcode     | Any UK postcode (or 5 digit number for USA)       |
 
 ## Authors
 

@@ -22,7 +22,7 @@ const Payment = ({ navigation, route }) => {
   const subscribe = async () => {
     try {
       const response = await fetch(
-        "https://javascriptmas.cyclic.app/api/payment",
+        "https://rich-gold-basket-clam-cape.cyclic.app/api/payment",
         {
           method: "POST",
           body: JSON.stringify({ name: "nasser" }),
@@ -67,7 +67,8 @@ const Payment = ({ navigation, route }) => {
         source={require("../assets/Barber.png")}
       />
       <Text style={customStyles.textStyle}>
-        {`You are booking an appointment at ${timeSlot} on ${timeSlotDate} for a haircut please pay the deposit to confirm the booking`}
+        {`You are booking an appointment at ${timeSlot} on ${timeSlotDate} for a haircut.`},
+        {`Please pay the deposit to confirm the booking`}
       </Text>
       <Pressable
         onPress={subscribe}

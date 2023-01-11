@@ -18,9 +18,7 @@ export default function TabNavigator() {
       <Tab.Screen
         name={user.username ? "Logout" : "Login/Register"}
         component={LoginStack}
-        // component={user.username ? LoginStack {{loggedin: yes}} : LoginStack {{loggedin: yes}}}
-        
-        // initialParams={user.username ? setUser({}) : setUser({user})}
+  
         options={{
           headerShown: false,
           tabBarStyle: { display: "none" },
@@ -33,7 +31,6 @@ export default function TabNavigator() {
           tabBarActiveTintColor: "white",
           tabBarIcon: ({ size, color }) => (
             <MaterialCommunityIcons
-              // name="login"
               name={user.username ? "logout" : "login"}
               color={"white"}
               size={size}
@@ -81,26 +78,6 @@ export default function TabNavigator() {
           ),
         }}
       />
-      {/* <Tab.Screen
-        name="Register"
-        component={RegisterStack}
-        options={{
-          headerShown: false,
-          tabBarLabelStyle: { fontSize: 14 },
-          tabBarStyle: {
-            backgroundColor: "black",
-            paddingTop: 5,
-          },
-          tabBarActiveTintColor: "white",
-          tabBarIcon: ({ size, color }) => (
-            <MaterialCommunityIcons
-              name="card-account-details"
-              color={"white"}
-              size={size}
-            />
-          ),
-        }}
-      /> */}
     </Tab.Navigator>
   );
 }
