@@ -21,17 +21,17 @@ https://rich-gold-basket-clam-cape.cyclic.app/api/health
 
 ### Dependencies
 
-React
-React-native
-React-navigation
-Expo
-Stripe
-Axios
-Date-fns
-Dotenv
-Formik
-Yup
-Lottie-react-native
+- React
+- React-native
+- React-navigation
+- Expo
+- Stripe
+- Axios
+- Date-fns
+- Dotenv
+- Formik
+- Yup
+- Lottie-react-native
 
 ### Installing
 
@@ -52,7 +52,7 @@ Browse appointments without logging in. To book and pay for an appointment you m
 Login as an existing user or create a new user
 
 Login details
-username | password
+**username** | **password**
 ----------|----------
 gs | password
 nb | password
@@ -63,18 +63,19 @@ Select the date and time of the appointment
 
 To pay using Stripe, the test credit card details are used:
 Card Details | Input
+-------------|------
 Number | 4242 4242 4242 4242
 Expiry | Any future month and year in the format MM/YY
 CVC | Any 3 digit number
 Postcode | Any UK postcode (or 5 digit number if country is USA)
 
-## Help
-
 ## Authors
 
 This app was made as a final project for the Northcoders full-stack software development bootcamp
+
 The project team was :
-Nasser Benashur
-Robbie McDonough
-Ryan Nolan
-Gary Shaw @g4ry5haw
+
+- Nasser Benashur
+- Robbie McDonough
+- Ryan Nolan
+- Gary Shaw
