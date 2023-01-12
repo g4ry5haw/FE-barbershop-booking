@@ -6,19 +6,17 @@ An app built for browsing, booking and paying for appointments with your local b
 
 The app was built as a group project during the final phase of the Northcoders Software Development bootcamp which ran from October-22 to January-23. The goal was to build a fully-functioning software product using at least 2 new technologies that hadn’t been taught on the Bootcamp. These were chosen as MongoDB for the back-end and React Native for the front-end
 
-The project was phased over 3 :
+The project was phased over 3 weeks:
 
-- Week 1 - idea generation, spiking and RATs, define tasks on kanban board using Trello
-- Week 2 - build the back-end using MongoDB. Start of front-end build using React Native
+- Week 1 - idea generation, spiking and RATs, defining tasks on kanban board using Trello
+- Week 2 - build the back-end using MongoDB. Start of the front-end build using React Native
 - Week 3 - finalisation of the front-end
 
-The front-end and back-end are in 2 separate repositories. The back-end repo can be accesed [here](https://github.com/g4ry5haw/BE-barbershop-booking).
+The front-end and back-end are in 2 separate repositories. The corresponding back-end repo can be accesed [here](https://github.com/g4ry5haw/BE-barbershop-booking).
 
 The back-end incldues a hosted MongoDB Atlas database.
 
-The API's are hosted on cyclic. You can check the server is up and running with the url :
-
-https://rich-gold-basket-clam-cape.cyclic.app/api/health
+The API's are hosted on cyclic. You can check the server is up and running [here](https://rich-gold-basket-clam-cape.cyclic.app/api/health)
 
 ## Getting Started
 
@@ -50,11 +48,23 @@ To run the app you will need to have one of the following already installed:
 
 **Windows or Linux users:** [Android Studio](https://developer.android.com/studio)
 
+### Pre-requisites for using your own back-end
+
+If you wish to create your own back-end you will need to follow the instructions in the 'README.md` in the [back-end repo](https://github.com/g4ry5haw/BE-barbershop-booking).
+
+You will also need to replace the `STRIPE_PUBLIC_KEY` in the file `app.js` with the Publishable key from your own [Stripe account](https://dashboard.stripe.com/register)
+
+```javascript
+const STRIPE_PUBLIC_KEY = "pk_test.....";
+```
+
 ### Executing the program
 
-To start the app run `npm start` and choose an emulator to display the app (eg on macOS enter i to open an iOS emulator)
+To start the app run `npm start` and choose an emulator to display the app
 
-Browse appointments without logging in.
+> e.g. on macOS enter `i` to open an iOS emulator)
+
+Users can select the _browse_ tab to view appointments without logging in.
 
 To book and pay for an appointment you must log in as an existing user or create a new user.
 
