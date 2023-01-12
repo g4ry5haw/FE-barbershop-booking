@@ -1,7 +1,9 @@
 import axios from "axios";
+const url = "https://rich-gold-basket-clam-cape.cyclic.app/api";
+export const host = url;
 
 export const bookingApi = axios.create({
-  baseURL: "https://rich-gold-basket-clam-cape.cyclic.app/api",
+  baseURL: url,
 });
 
 export const validateUser = (username, body) => {

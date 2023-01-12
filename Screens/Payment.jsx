@@ -10,7 +10,7 @@ import React from "react";
 import { useStripe } from "@stripe/stripe-react-native";
 import { format } from "date-fns";
 import customStyles from "../styles/customStyles";
-import { bookingApi } from "../api";
+import {host}  from "../api";
 
 const Payment = ({ navigation, route }) => {
   const stripePay = useStripe();
@@ -22,9 +22,9 @@ const Payment = ({ navigation, route }) => {
 
   const subscribe = async () => {
     try {
+      
       const response = await fetch(
-        `${bookingApi}/payment`,
-        // "https://rich-gold-basket-clam-cape.cyclic.app/api/payment",
+        `${host}/payment`,
         {
           method: "POST",
           body: JSON.stringify({ name: "nasser" }),
@@ -34,6 +34,7 @@ const Payment = ({ navigation, route }) => {
         }
       );
 
+      
       const data = await response.json();
       if (!response.ok) return Alert.alert(data.message);
       const clientSecret = data.clientSecret;
@@ -58,6 +59,7 @@ const Payment = ({ navigation, route }) => {
         });
       }
     } catch (error) {
+      console.log(error)
       Alert.alert("something is wrong, please try later");
     }
   };

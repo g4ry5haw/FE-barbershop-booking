@@ -4,7 +4,7 @@ An app built for browsing, booking and paying for appointments with your local b
 
 ## Description
 
-The app was built as a group project during the final phase of the Northcoders Software Development bootcamp which ran from October-22 to January-23. The goal was to build a fully-functioning software product using at least 2 new technologies that hadn’t been taught on the Bootcamp. These were chosen as MongoDB for the back-end and React Native for the front-end
+The app was built as a group project during the final phase of the Northcoders Software Development bootcamp which ran from October-22 to January-23. The goal was to build a fully-functioning software product using at least 2 new technologies that hadn’t been taught on the Bootcamp. These were chosen as MongoDB for the back-end and React Native for the front-end.
 
 The project was phased over 3 weeks:
 
@@ -52,6 +52,14 @@ To run the app you will need to have one of the following already installed:
 
 If you wish to create your own back-end you will need to follow the instructions in the 'README.md` in the [back-end repo](https://github.com/g4ry5haw/BE-barbershop-booking).
 
+You will need to replace the `url` variable in `api.js` to match your hosted back-end application
+
+```javascript
+import axios from "axios";
+const url = "https://rich-gold-basket-clam-cape.cyclic.app/api";
+export const host = url;
+```
+
 You will also need to replace the `STRIPE_PUBLIC_KEY` in the file `app.js` with the Publishable key from your own [Stripe account](https://dashboard.stripe.com/register)
 
 ```javascript
@@ -64,7 +72,7 @@ To start the app run `npm start` and choose an emulator to display the app
 
 > e.g. on macOS enter `i` to open an iOS emulator)
 
-Users can select the _browse_ tab to view appointments without logging in.
+Users can select the **Browse** tab to view appointments without logging in.
 
 To book and pay for an appointment you must log in as an existing user or create a new user.
 
